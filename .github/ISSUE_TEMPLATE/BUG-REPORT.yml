@@ -1,0 +1,53 @@
+name: '🐛 Bug Report'
+description: Create a new ticket for a bug.
+title: '🐛 [BUG] - <title>'
+labels: ['bug']
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 'Description'
+      description: Please enter an explicit description of your issue
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: 'Repository URL'
+      description: Link to this repository or your fork
+      placeholder: ex. https://github.com/oooargon/dxf-crosshair-remover
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: 'Reproduction steps'
+      description: CLI command and input file details
+      value: |
+        1. Run `dxf-crosshair-remover process ...`
+        2. Open output DXF in AutoCAD
+        3. See error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 'Console output'
+      description: Paste CLI output or error messages
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: 'OS'
+      description: What is the impacted environment?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: false
