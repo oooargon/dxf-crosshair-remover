@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\ConvertNc1ToDxf]
+@="Конвертировать NC1 в DXF"
+"Icon"="C:\\Windows\\System32\\imageres.dll,345"
+
+[HKEY_CLASSES_ROOT\Directory\shell\ConvertNc1ToDxf\command]
+@="\"D:\\nc-helper-go\\bin\\dstv2dxf\\nc1-to-dxf-helper.exe\" -input \"%V\"" 

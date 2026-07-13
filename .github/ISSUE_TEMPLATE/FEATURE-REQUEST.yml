@@ -1,0 +1,45 @@
+name: "💡 Feature request"
+description: Suggest a new idea to improve dxf-crosshair-remover
+title: "💡 [Feature] <short title>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Related issues"
+      description: Mention any issues that provide additional context.
+      placeholder: "#123, #456"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Provide a concise explanation of the requested feature.
+      placeholder: "Describe what you need and why it matters."
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Acceptance criteria"
+      description: Outline the core scenarios this feature must satisfy.
+      placeholder: "- CLI should ...\n- Output DXF should ..."
+    validations:
+      required: true
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Risks / trade-offs"
+      description: Note any potential downsides or complexity.
+      placeholder: "List known risks or implementation costs."
+    validations:
+      required: true
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Open questions"
+      description: Share any unanswered questions that could block the implementation.
+      placeholder: "Anything we should clarify before building?"
+    validations:
+      required: false

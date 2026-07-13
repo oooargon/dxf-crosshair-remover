@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+bin/
+out/
+out-*/
+*.tsbuildinfo
+
+# Test / sample data (local only)
+examples/
+
+# Generated DXF variants
+*.no-cross.dxf
+*.circles.dxf
+*.ready.dxf
+*.cleaned.dxf
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
