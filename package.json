@@ -27,8 +27,8 @@
   "devDependencies": {
     "@types/node": "^26.2.0",
     "caxa": "^3.0.1",
-    "esbuild": "^0.28.1",
-    "tsx": "^4.23.11",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.12",
     "typescript": "^7.0.2"
   }
 }
